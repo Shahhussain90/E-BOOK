@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif, serif;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+    background-color: white;
+}
+
+
+
+
+input {
+    background-color: white;
+    padding-left: 3%;
+    width: 85%;
+    height: 35px;
+    margin-top: 5px;
+    outline: none;
+
+}
+
+
+
+
+
+
+
+
+
+.login-img {
+    width: 350px;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+.login-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    width: 60%;
+    align-items: center;
+    height: 35vmax;
+    margin: auto;
+    margin-top: 7%;
+    opacity: 0.90;
+}
+@media only screen and (max-width:1331px){
+    .login-main {
+       
+        width: 60%;   
+        height: 45vmax;
+    }
+}
+@media only screen and (max-width:1167px){
+    .login-main {
+       
+        width: 70%;   
+        height: 55vmax;
+    }
+}
+@media only screen and (max-width:1029px){
+    .login-main {
+       
+        width: 77%;   
+        height: 60vmax;
+    }
+}
+@media only screen and (max-width:950px){
+    .login-main {    
+        width: 85%;   
+        height: 60vmax;
+    }
+}
+@media only screen and (max-width:843px){
+    .login-main {    
+        width: 90%;   
+        height: 70vmax;
+    }
+}
+@media only screen and (max-width:771px){
+    .login-main {    
+        width: 100%;   
+        height: 70vmax;
+    }
+}
+@media only screen and (max-width:713px){
+    .login-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        align-items: center;
+        height: 90vmax;
+       
+    }
+}
+.login {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #f07c29;
+    flex-wrap: wrap;
+    box-shadow: -15px 1px 21px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -15px 1px 21px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -15px 1px 21px -1px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    margin-left: 5%;
+    width: 43%;
+    height: 430px;
+
+
+
+}
+@media only screen and (max-width:713px){
+    .login {
+
+     
+        width: 73%;
+        height: 430px;
+    
+    
+    
+    }
+}
+@media only screen and (max-width:451px){
+    .login {
+        width: 82%; 
+    
+    }
+}
+
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.para-login {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.input-main {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+
+}
+
+.l-2 {
+    margin-left: 10%;
+}
+
+#mail {
+    border: 1px solid #f07c29;
+    border-radius: 11px;
+    margin-left: -1%;
+    width: 188%;
+
+}
+
+
+#name {
+    border: 1px solid #f07c29;
+    border-radius: 11px;
+    margin-left: -2%;
+    width: 50%;
+
+}
+
+#lname {
+    border: 1px solid #f07c29;
+    border-radius: 11px;
+    margin-left: -7%;
+    width: 50%;
+
+}
+@media only screen and (max-width:1480px){
+    #mail {   
+        width: 150%;
+    
+    }
+    #name {
+        width: 46%;
+    
+    }
+    
+    #lname { 
+        width: 46%; 
+    }
+}
+/* #submit {
+    border: 1px solid #f07c29 !important;
+    border-radius: 11px !important;
+    margin-left: -7% !important;
+    width: 50% !important;
+
+} */
+/* #btn{
+    width: 10%;
+} */
+
+
+
+/* .btn {
+    width: 250px;
+    font-size: large;
+    border-radius: 100px;
+    outline: none;
+    background-color: white;
+    border: 1px solid #f07c29;
+    color: black;
+    height: 35px;
+    margin-left: 9%;
+}
+
+button:hover {
+    background-color: #f07c29;
+    color: white;
+    border: 1px solid black;
+    transition: all 0.3s ease-in;
+} */
+input[type=submit]:hover{
+  background-color: #f07c29;
+}
+#btn-REGISTER {
+    margin-left: 30px;
+    text-transform: capitalize;
+    background-color: #f07c29;
+    padding: 9px 23px 9px 23px;
+    color: white;
+    font-weight: 560;
+    border: 1px solid #f07c29;
+    outline: 0;
+    width: 30%;
+}
+
+#btn-REGISTER:focus {
+    border: 1px solid orange;
+    box-shadow: 0px 0px 2px 2px rgba(255, 166, 0, 0.555);
+}
+
+.para-join {
+    text-align: center;
+}
+
+.para-join a {
+    text-decoration: none;
+}

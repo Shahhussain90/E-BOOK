@@ -1,0 +1,1456 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif, serif;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 1200vh; */
+}
+
+
+.section-1 {
+    /* border: 1px solid red; */
+    width: 90vw;
+    height: fit-content;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-div,
+.login-register-btn-div {
+    width: 38%;
+    height: 130px;
+    color: #f07c29;
+    /* border: 3px solid rgb(0, 255, 0); */
+    display: flex;
+    align-items: center;
+}
+
+.login-register-btn-div {
+    justify-content: end;
+
+}
+
+.logo-div {
+    justify-content: baseline;
+    /* border: 1px solid rgb(255, 0, 0); */
+}
+
+.logo {
+    /* border: 1px solid red; */
+    width: 150px;
+    height: 100%;
+    /* position: relative;
+    right: 26px; */
+    margin-left: 25px;
+}
+
+.login,
+.register {
+    text-transform: capitalize;
+    background-color: #f07c29;
+    padding: 10px 20px 10px 20px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 560;
+    border: 1px solid orange;
+    outline: 0;
+    margin-right: 10px;
+}
+
+.fa-shopping-cart {
+    font-size: 25px;
+}
+
+.cart-txt {
+    font-weight: 600;
+}
+.cart-anchor{
+    color: #f07c29;
+    text-decoration: none;
+}
+.cart-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 60px;
+    margin-right: 5px;
+    /* border: 1px solid red; */
+}
+
+.cart-div:hover {
+    background-color: #f07c2911;
+}
+
+@media only screen and (max-width:767px) {
+
+    .logo-div,
+    .login-register-btn-div {
+        width: 50%;
+
+    }
+
+}
+
+@media only screen and (max-width:572px) {
+    .login-register-btn-div {
+        width: 60%;
+
+    }
+
+    .logo-div {
+        width: 40%;
+        font-size: 35px;
+    }
+
+
+}
+
+@media only screen and (max-width:515px) {
+    .login-register-btn-div {
+        width: 60%;
+
+    }
+
+
+    .login,
+    .register {
+        text-transform: capitalize;
+        background-color: #f07c29;
+        padding: 4px 10px 4px 10px;
+        border-radius: 7px;
+        color: white;
+        font-weight: 560;
+        border: 1px solid orange;
+        outline: 0;
+        margin-right: 10px;
+    }
+
+    .fa-shopping-cart {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+
+    .login-register-btn-div {
+        display: none;
+    }
+
+    .logo {
+        position: relative;
+        left: 8px;
+        margin-left: 0px;
+    }
+
+    .logo-div {
+        width: 100%;
+        height: 160px;
+        color: #f07c29;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
+
+
+
+
+/* header done ⬆️⬆️⬆️ */
+
+
+.section-2 {
+    width: 100%;
+    height: fit-content;
+    /* border: 1px solid red; */
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid red; */
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 120px;
+}
+
+li:hover {
+    background-color: #f07c29;
+    transition: all 0.3s ease-in;
+}
+
+.anchor-nav {
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.anchor-nav:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.anchor-nav::after {
+    content: "";
+    margin: left;
+    background-color: #ffffff;
+    display: block;
+    width: 0;
+    height: 3px;
+}
+
+.anchor-nav:hover::after {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+.bar-div {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar-cart {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ct {
+    color: white;
+    display: none;
+}
+
+.bar-div {
+    display: none;
+}
+
+.fa-bars,
+.menu {
+    display: none;
+    color: white;
+}
+
+.responsive-nav {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    justify-content: center;
+    display: none;
+}
+
+.res-div-2 {
+    width: 200px;
+    height: 240px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+
+
+@media only screen and (max-width:1000px) {
+
+    .fa-bars,
+    .menu,
+    .bar-div {
+        display: block;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .bar-div {
+        display: flex;
+    }
+
+    .logo {
+
+        margin-left: 0px;
+    }
+
+
+}
+
+@media only screen and (max-width:500px) {
+
+    .ct {
+        color: white;
+        display: block;
+    }
+
+}
+
+
+
+/* nav-done ⬆️⬆️⬆️ */
+
+.add-to-cart-div {
+    width: 100%;
+    height: 55vh;
+    background-color: #ededed;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+
+.recomendations-cart,
+.cart {
+    width: 36%;
+    height: 100%;
+    background-color: rgb(83, 83, 83);
+}
+
+/* <!-- div ready rest work after getting code ⬆️⬆️⬆️ --> */
+
+
+.library-img-1-div {
+    width: 100%;
+    height: 420px;
+    /* border: 1px solid blueviolet; */
+    background: url(imagesMain/slider-img-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: carousel 7s infinite forwards ease-in;
+}
+
+@keyframes carousel {
+    0% {
+        background: url(imagesMain/slider-img-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    10% {
+        background: url(imagesMain/slider-img-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    20% {
+        background: url(imagesMain/slider-img-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    30% {
+        background: url(imagesMain/slider-img-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    40% {
+        background: url(imagesMain/slider-img-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    50% {
+        background: url(imagesMain/slider-img-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    60% {
+        background: url(imagesMain/slider-img-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    70% {
+        background: url(imagesMain/slider-img-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    80% {
+        background: url(imagesMain/slider-img-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    90% {
+        background: url(imagesMain/slider-img-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    100% {
+        background: url(imagesMain/slider-img-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+}
+
+.tagline {
+    color: black;
+    text-align: center;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.425);
+
+    /* content: "ad"; */
+    width: 80%;
+    height: 80px;
+}
+
+.tagline::before {
+    content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Your Story.|";
+    animation: taglines 11s infinite forwards ease-in;
+}
+
+@keyframes taglines {
+    0% {content: "U|";}
+    1% {content: "Un|";}
+    2% {content: "Unl|";}
+    3% {content: "Unlo|";}
+    4% {content: "Unloc|";}
+    5% {content: "Unlock|";}
+    6% {content: "Unlock t|";}
+    7% {content: "Unlock th|";}
+    8% {content: "Unlock the|";}
+    9% {content: "Unlock the W|";}
+    10% {content: "Unlock the W|";}
+
+    11% {content: "Unlock the Wo|";}
+    12% {content: "Unlock the Wor|";}
+    13% {content: "Unlock the Worl|";}
+    14% {content: "Unlock the World|";}
+    15% {content: "Unlock the World o|";}
+    16% {content: "Unlock the World of|";}
+    17% {content: "Unlock the World of K|";}
+    18% {content: "Unlock the World of Kn|";}
+    19% {content: "Unlock the World of Kno|";}
+    20% {content: "Unlock the World of Know|";}
+    21% {content: "Unlock the World of Knowl|";}
+    
+    22% {content: "Unlock the World of Knowle|";}
+    23% {content: "Unlock the World of Knowled|";}
+    24% {content: "Unlock the World of Knowledg|";}
+    25% {content: "Unlock the World of Knowledge|";}
+    26% {content: "Unlock the World of Knowledge w|";}
+    27% {content: "Unlock the World of Knowledge wi|";}
+    28% {content: "Unlock the World of Knowledge wit|";}
+    29% {content: "Unlock the World of Knowledge with|";}
+    30% {content: "Unlock the World of Knowledge with E|";}
+    31% {content: "Unlock the World of Knowledge with Ev|";}
+    32% {content: "Unlock the World of Knowledge with Eve|";}
+    
+    33% {content: "Unlock the World of Knowledge with Ever|";}
+    34% {content: "Unlock the World of Knowledge with Every|";}
+    35% {content: "Unlock the World of Knowledge with Every P|";}
+    36% {content: "Unlock the World of Knowledge with Every Pa|";}
+    37% {content: "Unlock the World of Knowledge with Every Pag|";}
+    38% {content: "Unlock the World of Knowledge with Every Page|";}
+    39% {content: "Unlock the World of Knowledge with Every Page T|";}
+    40% {content: "Unlock the World of Knowledge with Every Page Tu|";}
+    41% {content: "Unlock the World of Knowledge with Every Page Tur|";}
+    42% {content: "Unlock the World of Knowledge with Every Page Turn|";}
+    43% {content: "Unlock the World of Knowledge with Every Page Turn D|";}
+
+    44% {content: "Unlock the World of Knowledge with Every Page Turn Di|";}
+    45% {content: "Unlock the World of Knowledge with Every Page Turn Dis|";}
+    45% {content: "Unlock the World of Knowledge with Every Page Turn Disc|";}
+    46% {content: "Unlock the World of Knowledge with Every Page Turn Disco|";}
+    47% {content: "Unlock the World of Knowledge with Every Page Turn Discov|";}
+    48% {content: "Unlock the World of Knowledge with Every Page Turn Discove|";}
+    49% {content: "Unlock the World of Knowledge with Every Page Turn Discover,|";}
+    50% {content: "Unlock the World of Knowledge with Every Page Turn Discover, R|";}
+    51% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Re|";}
+    52% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Rea|";}
+    53% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read,|";}
+
+    54% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, a|";}
+    55% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, an|";}
+    56% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and|";}
+    57% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and I|";}
+    58% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Im|";}
+    59% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Imm|";}
+    60% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Imme|";}
+    61% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immer|";}
+    62% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immers|";}
+    63% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse:|";}
+    64% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Y|";}
+
+    65% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Yo|";}
+    66% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: You|";}
+    67% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your|";}
+    68% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your D|";}
+    69% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Di|";}
+    70% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Dig|";}
+    71% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digi|";}
+    72% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digit|";}
+    73% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digita|";}
+    74% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital|";}
+    75% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital B|";}
+
+    76% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bo.|";}
+    77% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Boo|";}
+    78% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Book|";}
+    79% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Books|";}
+    80% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookst|";}
+    81% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Booksto|";}
+    82% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstor|";}
+    83% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore|";}
+    84% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore,|";}
+    85% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Y|";}
+    86% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Yo|";}
+
+    87% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, You|";}
+    88% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Your|";}
+    89% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Your S";}
+    90% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Your St";}
+    91% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Your Sto";}
+    92% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Your Stor";}
+    93% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Your Story.|";}
+    94% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Your Story.|";}
+    97% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Your Story.";}
+    100% {content: "Unlock the World of Knowledge with Every Page Turn Discover, Read, and Immerse: Your Digital Bookstore, Your Story.|";}
+    
+
+    
+
+}
+
+
+@media only screen and (max-width:1010px) {
+    .tagline {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width:865px) {
+    .tagline {
+        font-size: 21px;
+    }
+
+}
+
+/* @media only screen and (max-height:786px) {
+
+
+    .tagline {
+        height: 180px;
+        display: flex;
+        align-items: center;
+    }
+
+
+} */
+
+
+@media only screen and (max-width:674px) {
+    .tagline {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .tagline {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .tagline {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .tagline {
+        font-size: 11px;
+    }
+}
+
+.get-started {
+    text-transform: capitalize;
+    background-color: #f07c29;
+    padding: 9px 23px 9px 23px;
+    color: white;
+    font-weight: 560;
+    border: 1px solid #f07c29;
+    outline: 0;
+}
+
+.get-started:focus,
+.login:focus,
+.register:focus {
+    border: 1px solid orange;
+    box-shadow: 0px 0px 2px 2px rgba(255, 166, 0, 0.555);
+}
+
+/* section-1 & 2 done ⬆️⬆️⬆️ */
+
+
+
+
+.section-3,
+.section-4-finance,
+.section-5-featured,
+.section-6-blog {
+    width: 100%;
+    height: fit-content;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+
+/* .top-interesting-text-div,
+.top-interesting-books-div {
+    border: 1px solid rgb(255, 153, 0);
+
+} */
+
+.top-interesting-text-div,
+.finance-books-text-div {
+    height: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.TS,
+.FB {
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #f07c29;
+}
+
+.TS::after,
+.about-us-header::after,
+.FB::after {
+    content: "";
+    margin: left;
+    background-color: #f07c29;
+    display: block;
+    width: 0;
+    height: 3.6px;
+}
+
+.TS:hover::after,
+.about-us-header:hover::after,
+.FB:hover::after {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+
+.TSP,
+.FBS {
+    font-weight: 500;
+    font-size: 19px;
+}
+
+@media only screen and (max-width:754px) {
+
+    .TSP,
+    .FBS {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width:443px) {
+
+    .TSP,
+    .FBS {
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width:443px) {
+
+    .TS,
+    .FB {
+
+        font-size: 20px;
+
+    }
+
+}
+@media only screen and (max-width:528px) {
+
+    .TS,
+    .FB {
+
+        font-size: 23px;
+
+    }
+
+}
+
+
+
+/* 1st book column done⬆️⬆️⬆️  */
+
+
+
+
+
+
+
+.about-us {
+    width: 75%;
+    height: fit-content;
+    /* border: 1px solid rgb(0, 26, 255); */
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: #f07c2925 5px 5px, #f07c2925 10px 10px, #f07c2925 20px 20px, #f07c2925 25px 25px; */
+    box-shadow: 4.2px 8.5px 8.5px hsl(0deg 0% 0% / 0.37);
+}
+
+
+.about-text {
+    width: 46%;
+    height: 400px;
+    /* border: 1px solid rgb(30, 255, 0); */
+}
+
+.about-img {
+    width: 51%;
+    height: 400px;
+}
+
+.about-img {
+    background: url(https://img.freepik.com/premium-photo/opened-book-pile-old-books-generative-ai_786587-7182.jpg?w=740);
+    /* background-image: url(imagesMain/library-3.jpg); */
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 5px; */
+}
+
+
+.about-us-header {
+    font-weight: 900;
+    font-size: 50px;
+    width: fit-content;
+    color: #f07c29;
+}
+
+.about-us-paras {
+    font-size: 14px;
+    color: rgb(22, 22, 22);
+    font-weight: 540;
+}
+
+
+@media only screen and (max-width:821px) {
+    .about-us {
+        margin-top: 100px;
+    }
+
+    .about-us-header {
+        font-weight: 900;
+        font-size: 30px;
+        width: fit-content;
+    }
+
+    .about-us-paras {
+        font-size: 12px;
+        color: rgb(22, 22, 22);
+        font-weight: 540;
+    }
+
+
+}
+
+@media only screen and (max-width:640px) {
+
+    .about-us {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-img,
+    .about-text {
+        width: 100%;
+        height: 380px;
+    }
+
+    .about-us-header {
+        font-size: 40px;
+    }
+
+    .about-us-paras {
+        font-size: 15px;
+
+    }
+
+}
+
+@media only screen and (max-width:421px) {
+
+
+    .about-us-header {
+        font-size: 30px;
+    }
+
+    .about-us-paras {
+        font-size: 12px;
+
+    }
+
+}
+
+
+
+/* about us done ⬆️⬆️⬆️ */
+
+
+.section-4-finance,
+.section-5-featured,
+.section-6-blog {
+    margin-top: 100px;
+
+}
+
+/* .finance-books-text-div {
+    border: 1px solid green;
+} */
+
+/* FINANCE BOOKS ⬆️⬆️⬆️  */
+
+
+.box {
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.card {
+    position: relative;
+    width: 270px;
+    height: 380px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+.new-tag{
+    position: absolute;
+    background-color: #f07c29;
+    width: 30px;
+    height: 50px;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 18px 18px;
+   
+}
+.new-txt{
+    /* transform: rotate(90deg); */
+    font-weight: 600;
+    font-size: 13px;
+    /* letter-spacing: 2px; */
+    /* border: 1px solid red; */
+}
+
+@media only screen and (max-width:1134px) {
+    .box {
+        width: 650px;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}
+
+@media only screen and (max-width:693px) {
+    .box {
+        width: 520px;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+}
+
+@media only screen and (max-width:590px) {
+    .box {
+        width: 450px;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card {
+
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .box {
+        width: 400px;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .card {
+        width: 210px;
+    }
+}
+
+
+@media only screen and (max-width:416px) {
+    .box {
+        width: 350px;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    }
+
+    .card {
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width:364px) {
+    .box {
+        width: 350px;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        /* border: 1px solid red; */
+    }
+
+    .card {
+        width: 150px;
+    }
+
+    #h5 {
+
+        font-size: 13px;
+    }
+
+    #p {
+
+        font-size: 11px;
+
+    }
+
+    #price {
+
+        font-size: 11px;
+    }
+
+    .Add-To-Cart {
+
+        width: 120px;
+        height: 10px;
+
+    }
+}
+
+
+
+.card:before,
+.card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    /* background: #fff; */
+    background-color: #f07c29;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.card:hover:before {
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}
+
+.card:hover:after {
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}
+
+.card .imgBx {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card:hover .imgBx {
+    bottom: 130px;
+
+}
+
+.card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card .details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 15px;
+    height: 115px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+.card .details h2 {
+    margin: 0;
+    padding: 0;
+
+    color: #777;
+    text-transform: uppercase;
+}
+
+.card .details h2 span {
+    display: block;
+    margin-top: 5px;
+}
+
+
+.Add-To-Cart {
+    text-transform: capitalize;
+    background-color: #f07c29;
+    width: 120px;
+    height: 25px;
+    color: white;
+    font-weight: 700;
+    border: 3px solid #f07c29;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Add-To-Cart:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in;
+}
+
+#h5 {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#p {
+    font-size: 15px;
+    font-weight: 700;
+    /* border: 1px solid red; */
+}
+
+#price {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+
+@media only screen and (max-width:429px) {
+    .price {
+        font-size: 12px;
+    }
+
+    #h5 {
+        font-size: 14px;
+    }
+
+    #p {
+        font-size: 12px;
+    }
+
+}
+
+#p-blog {
+    font-size: 11px;
+    font-weight: 600;
+    /* border: 1px solid red; */
+}
+
+
+@media only screen and (max-width:510px) {
+
+    #p-blog {
+        font-size: 10px;
+        font-weight: 500;
+        /* border: 1px solid red; */
+    }
+}
+
+/* blog done  ⬆️⬆️⬆️  */
+
+
+
+
+
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-border-div {
+    height: 70%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-top: 3px solid #393939;
+    border-bottom: 3px solid #393939;
+}
+
+
+.footer-boxes,
+.footer-boxes-2,
+.footer-boxes-3 {
+    height: 60%;
+    width: 24%;
+    border-right: 2px solid #393939;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-boxes-4 {
+    border: 0;
+}
+
+.alignment-div,
+.alignment-div-2,
+.alignment-div-3 {
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.footer-E-book {
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-E-book-text {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.822);
+    line-height: 20px;
+}
+
+.span-footer {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.822);
+}
+
+.anchor-footer {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.822);
+}
+
+.span-footer:hover,
+.anchor-footer:hover {
+    color: #f07c29;
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+
+}
+
+
+.icons-div-footer {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 70px;
+    width: 100%;
+
+}
+
+.icons-footer {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.icons-footer:hover {
+    background-color: #f07c29;
+    transition: all 0.3s ease-in;
+}
+
+.anchor-icon {
+    color: black;
+    font-size: 22px;
+}
+
+
+
+@media only screen and (max-width:1101px) {
+    .footer-E-book {
+        font-size: 17px;
+    }
+
+    .footer-E-book-text {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .span-footer {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.822);
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width:940px) {
+    .footer-E-book {
+        font-size: 15px;
+
+    }
+
+    .footer-E-book-text {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .span-footer {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:890px) {
+    .footer-E-book {
+        font-size: 14px;
+
+    }
+
+    .footer-E-book-text {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .span-footer {
+        font-size: 11px;
+
+    }
+}
+
+@media only screen and (max-width:890px) {
+    .footer-border-div {
+        height: 70%;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:775px) {
+    .footer-border-div {
+        height: 70%;
+        width: 90%;
+    }
+
+    .icons-footer {
+        width: 40px;
+        height: 40px;
+
+    }
+
+}
+
+@media only screen and (max-width:685px) {
+    .footer-border-div {
+        height: 70%;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:659px) {
+
+    .alignment-div-2,
+    .alignment-div-3 {
+        width: 100%;
+        height: 90%;
+    }
+
+    .footer-boxes-2,
+    .footer-boxes-3 {
+        width: 18%;
+
+    }
+
+    .footer-boxes {
+
+        width: 30%;
+
+    }
+
+    .footer-E-book {
+        font-weight: 500;
+        font-size: 12px;
+        color: white;
+    }
+
+    .icons-footer {
+        width: 30px;
+        height: 35px;
+
+    }
+
+    .anchor-icon {
+        color: black;
+        font-size: 16px;
+    }
+}
+
+.copyright {
+    height: 15%;
+    width: 75%;
+    color: white;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.ct-text {
+    color: rgba(255, 255, 255, 0.966);
+    font-weight: 500;
+}
+
+
+
+
+
+
+.back-to-top-button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgb(29, 29, 29);
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.back-to-top-button:hover {
+    background-color: #f07c29;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+}
+
+.fa-arrow-up {
+    color: white;
+    margin: auto;
+    font-size: 17px;
+}
