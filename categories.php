@@ -11,8 +11,13 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" /> -->
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="styleCATEGORIES.css">
+        <style>
+            <?php include "styleCATEGORIES.css" ?>
+        </style>
     <title>CATEGORIES</title>
 </head>
 
@@ -63,10 +68,11 @@
     <span class="menu">menu</span>
     <div class="bar-cart">
       <i class="fa fa-bars" aria-hidden="true"></i>
-      <div class="cart-div">
-        <i class="fa fa-shopping-cart ct" aria-hidden="true"></i>
-
-      </div>
+      <a href="AddToCart.php" class="cart-anchor" style="color:#f07c29">
+            <div class="cart-div">
+              <i class="fa fa-shopping-cart ct" aria-hidden="true"></i>
+            </div>
+          </a>
     </div>
   </div>
 </nav>
@@ -74,7 +80,7 @@
 
 <div class="responsive-nav">
 <div class="res-div-2">
-  <div><a class="anchor-nav" href="index.html">HOME</a></div>
+  <div><a class="anchor-nav" href="index.php">HOME</a></div>
   <div><a class="anchor-nav" href="categories.php">CATEGORIES</a></div>
   <div><a class="anchor-nav" href="index.php #abt-US">ABOUT US</a></div>
   <div><a class="anchor-nav" href="index.php #featured-scroll">FEATURED</a></div>
@@ -138,7 +144,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="the rules of work.php" class="anc">
                                 <img src="imagesMain/img-1.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -171,7 +177,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="never let me go.php" class="anc">
                                 <img src="imagesMain/img-2.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -201,7 +207,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="alchemist.php" class="anc">
                                 <img src="imagesMain/img-3.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -231,7 +237,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="successful people.php" class="anc">
                                 <img src="imagesMain/img-4.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -261,7 +267,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="think-grow-rich.php" class="anc">
                                 <img src="imagesMain/img-5" class="img" alt="images">
                             </a>
                         </div>
@@ -291,7 +297,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="elon musk.php" class="anc">
                                 <img src="imagesMain/img-6.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -321,7 +327,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="to be rich.php" class="anc">
                                 <img src="imagesMain/img-9.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -351,7 +357,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="finance.php" class="anc">
                                 <img src="imagesMain/img-10.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -381,7 +387,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="Automatic Millionaire.php" class="anc">
                                 <img src="imagesMain/img-11.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -406,12 +412,41 @@
                         </div>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="imgBx">
+                            <a href="atomichabit.php" class="anc">
+                                <img src="imagesMain/img-44.jpg" class="img" alt="images">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h5 class="card-title"><a href="#" id="h5">Atomic habit</a></h5>
+                            <div class="card-subtitle mb-2 text-muted" id="p">
+
+                            </div>
+                            <p class="card-text" id="price">$4.98</p>
+                        </div>
+
+                        <div class="line"></div>
+                        <div class="viewers-published">
+                            <div class="views">
+                                <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;
+                                <span>6,195</span>
+                            </div>
+                            <div class="published">
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;
+                                <span>Jul 26, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="card">
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="rich dad.php" class="anc">
                                 <img src="imagesMain/img-15.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -441,7 +476,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="intelligent inverstor.php" class="anc">
                                 <img src="imagesMain/img-16.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -471,7 +506,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="all quiet.php" class="anc">
                                 <img src="imagesMain/img-35.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -501,7 +536,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="fractured freedom.php" class="anc">
                                 <img src="imagesMain/img-7.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -531,7 +566,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="mindset.php" class="anc">
                                 <img src="imagesMain/img-8.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -561,7 +596,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="brief history of time.php" class="anc">
                                 <img src="imagesMain/img-38.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -591,7 +626,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="silent patient.php" class="anc">
                                 <img src="imagesMain/img-18.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -621,7 +656,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="lord rings.php" class="anc">
                                 <img src="imagesMain/img-19.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -651,7 +686,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="book theif.php" class="anc">
                                 <img src="imagesMain/img-20.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -681,7 +716,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="steve jobs.php" class="anc">
                                 <img src="imagesMain/img-21.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -710,7 +745,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="young girl.php" class="anc">
                                 <img src="imagesMain/img-22.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -740,7 +775,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="becoming.php" class="anc">
                                 <img src="imagesMain/img-23.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -770,7 +805,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="ford.php" class="anc">
                                 <img src="imagesMain/img-24.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -800,7 +835,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="hamilton.php" class="anc">
                                 <img src="imagesMain/img-25.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -832,7 +867,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="1984.php" class="anc">
                                 <img src="imagesMain/img-27.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -865,7 +900,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="art of war.php" class="anc">
                                 <img src="imagesMain/img-34.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -897,7 +932,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="harry potter.php" class="anc">
                                 <img src="imagesMain/img-36.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -922,6 +957,35 @@
                         </div>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="imgBx">
+                            <a href="6 of crows.php" class="anc">
+                                <img src="imagesMain/img-49.jpg" class="img" alt="images">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h5 class="card-title"><a href="#" id="h5">Six of Crows</a></h5>
+                            <div class="card-subtitle mb-2 text-muted" id="p">
+
+                            </div>
+                            <p class="card-text" id="price">$12.13</p>
+                        </div>
+
+                        <div class="line"></div>
+                        <div class="viewers-published">
+                            <div class="views">
+                                <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;
+                                <span>9,365</span>
+                            </div>
+                            <div class="published">
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;
+                                <span>Jul 26, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
               
 
@@ -931,7 +995,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="david copper.php" class="anc">
                                 <img src="imagesMain/img-39.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -961,7 +1025,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="seventy two days.php" class="anc">
                                 <img src="imagesMain/img-40.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -991,7 +1055,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="how to win friends.php" class="anc">
                                 <img src="imagesMain/img-41.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -1021,7 +1085,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="12 rules for life.php" class="anc">
                                 <img src="imagesMain/img-42.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -1051,7 +1115,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="the subtle art.php" class="anc">
                                 <img src="imagesMain/img-43.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -1081,7 +1145,7 @@
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="make your bed.php" class="anc">
                                 <img src="imagesMain/img-45.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -1106,41 +1170,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-
-                        <div class="imgBx">
-                            <a href="" class="anc">
-                                <img src="imagesMain/img-46.jpg" class="img" alt="images">
-                            </a>
-                        </div>
-                        <div class="details">
-                            <h5 class="card-title"><a href="#" id="h5">Gone Girl</a></h5>
-                            <div class="card-subtitle mb-2 text-muted" id="p">
-
-                            </div>
-                            <p class="card-text" id="price">$6.16</p>
-                        </div>
-
-                        <div class="line"></div>
-                        <div class="viewers-published">
-                            <div class="views">
-                                <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;
-                                <span>11,195</span>
-                            </div>
-                            <div class="published">
-                                <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;
-                                <span>Jul 26, 2019</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 
                 <div class="card">
                     <div class="card-body">
 
                         <div class="imgBx">
-                            <a href="" class="anc">
+                            <a href="little lies.php" class="anc">
                                 <img src="imagesMain/img-48.jpg" class="img" alt="images">
                             </a>
                         </div>
@@ -1189,7 +1225,7 @@
                             <div class="card-body">
 
                                 <div class="imgBx">
-                                    <a href="" class="anc">
+                                    <a href="<?php echo $row['name'];echo".php" ?>" class="anc">
                                         <img src="ADMIN\uploaded_img/<?php echo $row['image']; ?>" class="img" alt="images">
                                     </a>
                                 </div>

@@ -7,7 +7,7 @@
   
 <body> 
         <button>
-        <a href="download.php?file=pdfS\big little lies">Download PDF Now</a> 
+            <a href="download.php?file=pdfS\big little lies">Download PDF Now</a> 
         </button>
 </body> 
 </html> 

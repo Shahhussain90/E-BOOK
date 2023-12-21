@@ -15,7 +15,10 @@ $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email
        $message[] = '<script> alert("user already exist!") </script>';
     }else{
        if($pass != $cpass){
-          $message[] = 'confirm password not matched!';
+          $message[] =   '
+          <script>
+                  alert("Confirm Password Not Matched!");   
+          </script>';
        }else{
         mysqli_query($conn,"INSERT INTO users VALUES(NULL,'".$name."','".$lname."','".$email."','".$pass."')") or die('query failed');
           $message[] = '<script> alert registered successfully! </script>';

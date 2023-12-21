@@ -73,7 +73,7 @@ if(isset($_GET['deleteid'])){
     <div class="container" style="margin-left:-0%;">
 <a href="register.php" ><button class="btn btn-primary"style="margin-left:0px"> Add User</button></a>
     </div>
-<table class="table text-center table-dark table-striped">
+<table class="table text-center table-dark table-striped" id="myTable">
   <thead>
     <tr>
       <th scope="col">id</th>

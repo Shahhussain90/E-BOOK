@@ -26,11 +26,12 @@ if(isset($_GET['deleteid'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="contact-Admin-style.css">
     <style>
         <?php include "contact-Admin-style.css" ?>
     </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -75,9 +76,9 @@ if(isset($_GET['deleteid'])){
 
 
     <div class="container" style="margin-left:-0%;">
-<a href="updater.php" ><button class="btn btn-primary"style="margin-left:0px"> Add User</button></a>
+<a href="contact.php" ><button class="btn btn-primary"style="margin-left:0px"> Add User</button></a>
     </div>
-<table class="table text-center table-dark table-striped">
+<table class="table text-center table-dark table-striped" id="myTable">
   <thead>
     <tr>
       <th scope="col">id</th>

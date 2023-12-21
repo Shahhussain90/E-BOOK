@@ -67,10 +67,11 @@
     <span class="menu">menu</span>
     <div class="bar-cart">
       <i class="fa fa-bars" aria-hidden="true"></i>
-      <div class="cart-div">
-        <i class="fa fa-shopping-cart ct" aria-hidden="true"></i>
-
-      </div>
+      <a href="AddToCart.php" class="cart-anchor" style="color:#f07c29">
+            <div class="cart-div">
+              <i class="fa fa-shopping-cart ct" aria-hidden="true"></i>
+            </div>
+          </a>
     </div>
   </div>
 </nav>
@@ -78,7 +79,7 @@
 
 <div class="responsive-nav">
 <div class="res-div-2">
-  <div><a class="anchor-nav" href="index.html">HOME</a></div>
+  <div><a class="anchor-nav" href="index.php">HOME</a></div>
   <div><a class="anchor-nav" href="categories.php">CATEGORIES</a></div>
   <div><a class="anchor-nav" href="index.php #abt-US">ABOUT US</a></div>
   <div><a class="anchor-nav" href="index.php #featured-scroll">FEATURED</a></div>

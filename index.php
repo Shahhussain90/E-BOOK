@@ -50,7 +50,9 @@
         <div class="cart-div">
           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
           <span class="cart-txt">cart <?php echo $count ?></span>
-        </div></a>
+        </div>
+      </a>
+
         <a href="login.php"><button class="login">login</button></a>
         <a href="register.php"><button class="register">register</button></a>
       </div>
@@ -77,10 +79,11 @@
         <span class="menu">menu</span>
         <div class="bar-cart">
           <i class="fa fa-bars" aria-hidden="true"></i>
-          <div class="cart-div">
-            <i class="fa fa-shopping-cart ct" aria-hidden="true"></i>
-
-          </div>
+          <a href="AddToCart.php" class="cart-anchor" style="color:#f07c29">
+            <div class="cart-div">
+              <i class="fa fa-shopping-cart ct" aria-hidden="true"></i>
+            </div>
+          </a>
         </div>
       </div>
     </nav>
@@ -88,7 +91,7 @@
 
   <div class="responsive-nav">
     <div class="res-div-2">
-      <div><a class="anchor-nav" href="index.html">HOME</a></div>
+      <div><a class="anchor-nav" href="index.php">HOME</a></div>
       <div><a class="anchor-nav" href="categories.php">CATEGORIES</a></div>
       <div><a class="anchor-nav" href="#abt-US">ABOUT US</a></div>
       <div><a class="anchor-nav" href="#featured-scroll">FEATURED</a></div>

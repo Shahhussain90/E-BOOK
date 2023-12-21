@@ -9,7 +9,7 @@ if(isset($_POST["submit"])){
         if($password == $row["password"]){
             $_SESSION["login"] = true;
             $_SESSION["id"] = $row["id"];
-            echo "welcome";
+            header("Location:index.php");
 
         }
         
